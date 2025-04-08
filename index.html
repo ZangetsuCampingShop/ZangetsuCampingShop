@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zangetsu Camping Shop</title>
+  <link rel="icon" href="img/logoPestaña.png" type="image/png">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <img src="img/logotipo.jpg" alt="Logo Zangetsu" class="logo" />
+      <h1 class="site-title">Zangetsu Camping Shop</h1>
+      <nav class="nav-links">
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+        <button onclick="window.location.href='#productos'">Saber más</button>
+    </section>
+
+    <section id="productos" class="productos-slider">
+        <div class="container">
+            <h2>Productos Destacados</h2>
+            <div class="slider">
+                <!-- Botones de navegación ahora dentro del contenedor del slider -->
+                <button class="nav left" onclick="moverSlider(-1)">&#10094;</button>
+                <div class="slider-container" id="sliderContainer">
+                    <div class="slide activo">
+                        <img src="https://via.placeholder.com/400x400?text=Tienda+de+Campaña" alt="Tienda">
+                        <h3>Tienda de Campaña</h3>
+                        <p>Ideal para cualquier clima y terreno.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="https://via.placeholder.com/400x400?text=Mochila+de+Aventura" alt="Mochila">
+                        <h3>Mochila de Aventura</h3>
+                        <p>Diseño ergonómico y gran capacidad.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="https://via.placeholder.com/400x400?text=Saco+de+Dormir" alt="Saco">
+                        <h3>Saco de Dormir</h3>
+                        <p>Ultraligero y térmico.</p>
+                    </div>
+                </div>
+                <button class="nav right" onclick="moverSlider(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="productosLista" class="productos-lista">
+      <div class="container">
+        <h2>Nuestros Productos</h2>
+        <p>Descubre nuestra variedad de productos ideales para tus aventuras al aire libre y más.</p>
+        <div class="productos">
+          <div class="producto">
+            <img src="https://via.placeholder.com/400x400?text=Tienda+de+Campaña" alt="Tienda">
+            <h3>Tienda de Campaña</h3>
+            <p>Ideal para cualquier clima y terreno.</p>
+          </div>
+          <div class="producto">
+            <img src="https://via.placeholder.com/400x400?text=Mochila+de+Aventura" alt="Mochila">
+            <h3>Mochila de Aventura</h3>
+            <p>Diseño ergonómico y gran capacidad.</p>
+          </div>
+          <div class="producto">
+            <img src="https://via.placeholder.com/400x400?text=Saco+de+Dormir" alt="Saco">
+            <h3>Saco de Dormir</h3>
+            <p>Ultraligero y térmico.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tiendaDetalles" class="tienda-detalles">
+      <div class="container">
+        <h2>Zangetsu Camping Shop</h2>
+        <p>En Zangetsu Camping Shop ofrecemos una amplia variedad de productos para tus aventuras al aire libre...</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <div class="container">
+        <h2>Contacto</h2>
+        <p>Ubicación: Xalapa, Veracruz</p>
+        <p>Email: <a href="mailto:contacto@zangetsucamping.com">contacto@zangetsucamping.com</a></p>
+        <button onclick="contactarWhatsapp()">Contáctanos por WhatsApp</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Zangetsu Camping Shop. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
